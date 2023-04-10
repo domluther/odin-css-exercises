@@ -46,3 +46,19 @@ a {
 ul {
   list-style-type: none;
 }
+
+/* Main header is a flexbox, items positoned at either end */
+.header {
+  display:flex;
+  justify-content: space-between;
+  /* Cross axis central */
+  align-items: center;
+  padding: 8px
+}
+
+/* 3 more flexboxes with some gaps to space items */
+.left-flexbox, .links, .right-flexbox {
+  display: flex;
+  gap: 16px
+}
+
