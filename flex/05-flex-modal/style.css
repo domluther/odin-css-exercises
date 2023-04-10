@@ -13,7 +13,44 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
+.modal {
+  display: flex;
+/* There is padding around the edge of the modal. */
+  padding: 16px;
+}
+
+.header-button {
+  display: flex;
+  justify-content: space-between;
+}
+div {
+  margin: 5px
+}
+/* - The blue icon is aligned to the left.*/
+.icon {
+  flex-shrink: 0;
+}
+
+.header {
+/* The header is bold and a slightly larger text-size than the text. */
+  font-weight: bold;
+  font-size: large;
+  margin-bottom: 8px;
+}
+.text {
+  margin-bottom: 16px;
+}
+/*- There is equal space on either side of the icon (the gaps between the icon and the edge of the card, and the icon and the text, are the same).
+- The header, text, and buttons are aligned with each other.
+- The close button is vertically aligned with the header, and aligned in the top-right of the card. */
+
+
+
+
+
+
 
 .modal {
   background: white;
