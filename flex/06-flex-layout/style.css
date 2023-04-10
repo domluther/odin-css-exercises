@@ -25,3 +25,50 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+ul{
+  /* Remove bullets from lists */
+  list-style-type: none;
+}
+
+a{
+  /* Remove underlines from links */
+  text-decoration: none;
+  color: #666
+}
+
+body, .header, .footer {
+  /* Creates the header */
+  display: flex;
+  /* - The links in the header and footer are pushed to either side. */
+  justify-content: space-between;
+  /* - There is space between the links in the header and footer. */
+  gap: 20px
+}
+
+ul{
+  display: flex;
+  gap: 16px
+  
+}
+body, .content{
+  flex-direction: column;
+}
+
+.content, .input, .buttons {
+  align-self: center;
+  display: flex;
+}
+
+.footer {
+  /* - The footer has a light gray background (`#eeeeee`). */
+  background-color: #eeeeee;
+}
+.buttons {
+  padding: 8px;
+  gap: 20px
+}
+.header, .footer {
+  /* - The header and footer have padding. */
+  padding: 16px;
+}
