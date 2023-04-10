@@ -1,3 +1,8 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   background: #eee;
   font-family: sans-serif;
@@ -6,22 +11,46 @@ body {
 .card {
   width: 400px;
   background: #fff;
-  margin: 16px auto;
+  /* Centrally position overall */
+  margin: 8px auto;
+  /* 8 px between edge of card & content */
+  padding: 8px;
+  
 }
 
 .title {
   background: #e3f4ff;
+  /* title of card uses 16px font */
+  font-size: 16px;
+  /* 8 px between title text + edge of title section */
+  padding: 8px; 
 }
 
 .content {
   background: #e3f4ff;
+  /* 8px between each of blue sections - don't do side 
+  would combine with card padding to cause issues */
+  margin: 8px 0;
+  /* 16px space on top and bottom, 8px on side */
+  padding: 16px 8px;
+
 }
 
 .button-container {
   background: #e3f4ff;
+  /* 8px adding */
+  padding: 8px;
+  /* everything centered ??? */
+  text-align: center;
+  
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  /* Big Button is on its own line */
+  display: block;
+  /* 24px space on sides, 8 on top and bottom */
+  padding: 8px 24px;
+  margin: auto;
 }
